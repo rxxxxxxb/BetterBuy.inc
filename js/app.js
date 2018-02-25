@@ -99,6 +99,12 @@ new Vue({
                 this.cart.items.splice(index, 1);
             }
 
+        },
+
+        checkout: function() {
+            if (confirm('Are you sure that you want to complete the purchase?')){
+                this.cart.items = [];
+            }
         }
     },
 
