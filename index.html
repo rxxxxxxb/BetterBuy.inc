@@ -65,7 +65,8 @@
                             <td> 
                                 <button class="btn btn-danger" @click="decreaseQuantity(item)">-</button>
                                 {{ item.quantity }} 
-                                <button class="btn btn-success" @click="increaseQuantity(item)" :disabled = "item.product.instock == 0">+</button>
+
+                                <button class="btn btn-success" @click="increaseQuantity(item)" :disabled = "item.product.inStock == 0">+</button>
                             </td>
                             <td> {{ item.quantity * item.product.price | currency }} </td>
                         </tr>

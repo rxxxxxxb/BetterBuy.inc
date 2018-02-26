@@ -59,7 +59,8 @@ new Vue({
             
             if (cartItem != null){
                 cartItem.quantity++;
-            } else {
+            } 
+            else {
                 this.cart.items.push({
                     product: product,
                     quantity: 1
